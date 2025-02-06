@@ -68,12 +68,17 @@ return {
 
         --  Startup
         { section = 'startup', padding = 1 },
-        { section = 'terminal', cmd = "printf ' '", height = 10 },
+        { section = 'terminal', cmd = "printf ' '", height = 3 },
 
         -- Keys
         {
           section = 'terminal',
           cmd = 'pokemon-colorscripts -n psyduck --no-title; sleep .1',
+          padding = 2,
+        },
+        {
+          section = 'terminal',
+          cmd = 'pokemon-colorscripts -n clefairy --no-title; sleep .1',
           padding = 2,
         },
       },
